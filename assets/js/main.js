@@ -138,36 +138,69 @@ console.log('=============================')
 console.log('CodeFlow Übung lev1_7: Objects Arrays Loop Accessing')
 
 
-let myMusic2 = [
+
+myMusic.forEach((item, index) => {
+
+    if(myMusic[index].release_year <= 1975)
+        { 
+        console.log(myMusic[index].artist)
+        console.log(myMusic[index].title)
+        console.log(myMusic[index].medium)
+        
+    }
+
+})
+
+
+console.log('=============================')
+
+
+
+//CodeFlow Übung lev1_8: Objects Arrays Loop Accessing
+console.log('CodeFlow Übung lev1_8: Objects Arrays Loop Accessing')
+
+let studentData = [
     {
-        artist: "The Beatles",
-        title: "Abbey Road",
-        release_year: 1969,
-        medium: ["LP", "CD", "MC", "Download"],
-        gold: true
+        name: "Alex",
+        age: 23,
+        coop: false,
+        address: {
+            street: "Don Valley Business Park",
+            city: "Toronto",
+            postalCode: "ONM3C3E5"
+        },
+        emails: ["alex69@gmail.com", "alex123@yahoo.com"]
     },
     {
-        artist: "Pink Floyd",
-        title: "Dark Side of the Moon",
-        release_year: 1978,
-        medium: ["CS", "CD", "LP", "Download"],
-        gold: true
-    },
-    {
-        artist: "Led Zeppelin",
-        title: "Led Zeppelin IV",
-        release_year: 1971,
-        medium: ["CS", "LP", "Download"],
-        gold: true
-    },
-    {
-        artist: "Metallica",
-        title: "Kill 'Em All und Ride the Lightning",
-        release_year: 1983,
-        medium: ["LP", "CD", "MC", "Download"],
-        gold: true
+        name: "Sandra",
+        age: 22,
+        coop: true,
+        address: {
+            street: "34 Lawrence Ave",
+            city: "Toronto",
+            postalCode: "ONM3C0E5"
+        },
+        emails: ["sandra@gmail.com", "sandra@yahoo.com"]
     }
 ]
+
+studentData.forEach((item, index) => {
+
+    console.log(studentData[index].name)
+    console.log(studentData[index].coop)
+    console.log(studentData[index].emails)
+
+
+})
+
+/* studentData.forEach((item, index) => {
+
+    console.log(studentData[index].address.myp(city))
+
+
+}) */
+
+
 
 
 
